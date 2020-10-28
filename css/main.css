@@ -1,0 +1,108 @@
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	font-size: 18px;
+	line-height: 1em;
+	height: 140px;
+	background-color: #333;
+}
+
+.navbar-head {
+    float: left;
+	margin-left: 1px;
+	width: 150px;
+}
+
+.navbar-head:first-child {
+	margin-left: 0;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar-head > ul > li {
+  background-color:#EEE;
+}
+
+.navbar-head > ul > li:hover {
+  background-color:#DDD;
+}
+
+.options {
+  border-top:1px solid #FFF;
+}
+
+.options:hover {
+	background-color:#DDD;
+}
+
+.navbar-head:hover {
+    background-color: #EEE;
+}
+
+.navbar-head > ul {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	display: none;
+}
+
+.navbar-head:hover > ul {
+	display: block;
+}
+
+.navbar-head:hover > a {
+	color:#09C;
+}
+
+#navbar_icon {
+	float: right;
+}
+
+#body-main {
+	text-align: center;
+}
+
+/*LIST.HTML CSS*/
+
+#body_list {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#start_h2 {
+	text-align: center;
+}
+#right_info, #footer {
+	text-align: right;
+}
+#left_info{
+	text-align: left;
+}
+
+#dropcap:first-letter {
+	font-size: 50px;
+	line-height: 1.4em;
+	font-weight: bold;
+	vertical-align: middle;
+	background-color: darksalmon;
+	padding: 1 8px;
+}
+
+#middle {
+	font-family: Gabriola;
+}
+
+/* PODRECZNIK_PRZYKLADY.HTML */
+
+#example_1 {
+	float: left;
+}
