@@ -1,0 +1,16 @@
+#div_to_slide, #div_slide {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#div_slide {
+  padding: 50px;
+  display: none;
+}
+
+#div_empty{
+	width: 400px;
+	height: 420px;
+}
