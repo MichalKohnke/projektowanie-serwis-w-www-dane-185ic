@@ -14,3 +14,6 @@
 
 					Podręcznik, przykłady - podrecznik_przyklady.html
 ![alt text](https://github.com/MichalKohnke/projektowanie-serwisow-www-dane-185ic/blob/main/lab1_screeny/podrecznik_przyklady.png)
+
+					Laboratorium nr 2 - index.html
+![alt text](https://github.com/MichalKohnke/projektowanie-serwisow-www-dane-185ic/blob/main/Lab2/lab2_screeny/index_screen.png)
