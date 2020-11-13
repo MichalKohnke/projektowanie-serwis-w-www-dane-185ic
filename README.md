@@ -17,3 +17,6 @@
 
 					Laboratorium nr 2 - index.html
 ![alt text](https://github.com/MichalKohnke/projektowanie-serwisow-www-dane-185ic/blob/main/Lab2/lab2_screeny/index_screen.png)
+
+					Laboratorium nr 3 - index.html
+![alt text](https://github.com/MichalKohnke/projektowanie-serwisow-www-dane-185ic/blob/main/Lab3/lab3_screeny/index_screen.png)
