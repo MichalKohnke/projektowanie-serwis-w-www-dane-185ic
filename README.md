@@ -30,4 +30,4 @@
 					Laboratorium nr 4 - dodana opcja - przegrana gry
 ![alt text](https://github.com/MichalKohnke/projektowanie-serwisow-www-dane-185ic/blob/main/Lab4/lab4_screeny/przegrana.png)
 
-Gra z gotowego szablonu, przerobiony css oraz dodany własny js. Modyfikacje to między innymi: gdy możemy schwytać ptaka kursor zmienia się na "grab", podliczanie punktów w js, dodana opcja wygrania lub przegrania gry
+Gra z gotowego szablonu, przerobiony css oraz dodany własny js. Modyfikacje to między innymi: gdy możemy schwytać ptaka kursor zmienia się na "grab", podliczanie punktów w js, dodana opcja wygrania lub przegrania gry.
