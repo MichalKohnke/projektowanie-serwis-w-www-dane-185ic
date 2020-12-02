@@ -1,0 +1,17 @@
+{
+    "imie": "Marcin",
+    "nazwisko": "Pietraszek",
+    "strona": {
+        "adres_www": "https://www.samouczekprogramisty.pl",
+        "artykuly": [
+            {
+                "tytul": "Format JSON w języku Java",
+                "data publikacji": {
+                    "rok": 2018,
+                    "miesiac": 9,
+                    "dzień": 13
+                }
+            }
+        ]
+    }                                                                                                                                    
+}
