@@ -1,6 +1,9 @@
 # projektowanie-serwisow-www-dane-185ic
 # Autor: Michał Kohnke
 
+					Laboratorium nr 5 - index ze zrzutem z konsoli
+![alt text](https://github.com/MichalKohnke/projektowanie-serwisow-www-dane-185ic/blob/main/Lab5/lab5_screeny/index_screen.png)
+
 					Laboratorium nr 4 - początek gry
 ![alt text](https://github.com/MichalKohnke/projektowanie-serwisow-www-dane-185ic/blob/main/Lab4/lab4_screeny/index.png)
 
