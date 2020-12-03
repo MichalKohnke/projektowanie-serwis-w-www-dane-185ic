@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Strona WWW MK</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="assets/js/main.js" type="text/javascript"></script>-->
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Pasek nawigacyjny -->
+	<nav class="navbar navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">
+		<img src="img/icon-mk.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+		Strona główna
+		</a>
+	</nav>
+
+  <!-- Kontent główny -->
+<script>
+(function() {
+var json = {
+  "imie": "John",
+  "wiek": 30,
+  "samochody": [
+    {
+      "opis": {
+        "marka": "BMW",
+        "model": "E36"
+      },
+      "statystyki": {
+        "ilosc_koni": 420,
+        "moment_obrotowy": 550
+      }
+    },
+    {
+      "opis": {
+        "marka": "Mercedes",
+        "model": "W124"
+      },
+      "statystyki": {
+        "ilosc_koni": 300,
+        "moment_obrotowy": 380
+      }
+    },
+    {
+      "opis": {
+        "marka": "Honda",
+        "model": "Prelude"
+      },
+      "statystyki": {
+        "ilosc_koni": 132,
+        "moment_obrotowy": 200
+      }
+    }
+  ]
+};
+
+//ZAD.1
+//task 1
+console.log("DODAWANIE FUNKCJA ZWROTNA:")
+function dodawanie(a, b){
+	return a + b;
+}
+console.log(dodawanie(json.wiek, json.samochody[0].statystyki.moment_obrotowy))
+console.log("--------------------------------")
+//task 2
+console.log("ŁĄCZENIE STRINGÓW FUNKCJA ZWROTNA:")
+function LaczenieStringow(s1, s2){
+var s3 = `Połączenie stringów: ${s1}${s2}`
+console.log(s3) 
+}
+LaczenieStringow(json.imie, json.samochody[0].opis.marka)
+console.log("--------------------------------")
+
+//ZAD.2
+//task 1
+const posty_num = fetch('https://jsonplaceholder.typicode.com/posts');
+
+posty_num
+    function getPost_num(response) {
+    return new Promise((resolve, reject) => {
+        if (response !== 200) {
+            resolve(response);
+   
+        } else {
+            reject('Nie udało się uzyskać posta.');
+        }
+    });
+}
+
+getPost_num(posty_num)
+.then(response => response.json().then(function(data) {
+        console.log('PROMISE DODAWANIE: ' + (data[0].id+data[1].id));
+      }))
+.catch(error => console.log("Błąd przy dodawaniu liczb: ",error))
+.finally(() => console.log('Promise, dodawanie liczb - zrobione'));
+
+//task 2
+const posty_str = fetch('https://jsonplaceholder.typicode.com/posts');
+
+posty_str
+    function getPost_str(response) {
+    return new Promise((resolve, reject) => {
+        if (response !== 200) {
+            resolve(response);
+   
+        } else {
+            reject('Nie udało się uzyskać posta.');
+        }
+    });
+}
+
+getPost_str(posty_str)
+.then(response => response.json().then(function(data) {
+		var s3 = data[1].title + data[2].title
+        console.log('PROMISE ŁĄCZENIE STRINGÓW: ' + s3);
+      }))
+.catch(error => console.log("Błąd przy tworzeniu nowego obiektu ze stringów:",error))
+.finally(() => console.log('Promise, łączenie stringów - zrobione'));
+
+//ZAD.3
+//task 1
+async function setPost_num(posty) {
+    const article = await getPost_num(posty);
+    console.log("Async await - liczby");
+}
+
+setPost_num(posty_num);
+//task 2
+async function setPost_str(posty_str) {
+    const article = await getPost_str(posty_str);
+    console.log("Async await - string");
+}
+
+setPost_str(posty_str);
+
+//ZAD.4
+//task 1 i task2 w jednej funkcji
+ let url = 'https://jsonplaceholder.typicode.com/posts/1';
+        let xhr = new XMLHttpRequest();
+
+        xhr.open('GET', url);
+
+        xhr.responseType = 'json';
+        xhr.send();
+
+        xhr.onload = function () {
+            let responseObj = xhr.response;
+            console.log("AJAX DODAWANIE = " + (responseObj.userId + responseObj.id))
+            console.log("AJAX ŁĄCZENIE STRINGÓW = " + responseObj.title + responseObj.body)
+        };
+		xhr.onerror = function () {
+            console.log("Ajax error"); 
+        }
+		
+//ZAD.5
+//task 1
+const posty_fet = fetch('https://jsonplaceholder.typicode.com/posts');
+
+posty_fet
+
+    .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('Wystąpił błąd. Kod: ' +
+          response.status);
+        return;
+      }
+	  
+	  response.json().then(function(data) {
+		console.log('FETCH WYNIK LICZB: ' + (data[0].id+data[1].id));
+      });
+    }
+  )
+   .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  })
+ 
+ 
+ .finally(() => console.log("FETCH liczb ZROBIONY!"));
+ 
+//task 2
+const posty_fet2 = fetch('https://jsonplaceholder.typicode.com/posts');
+
+posty_fet2
+
+    .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('Wystąpił błąd. Kod: ' +
+          response.status);
+        return;
+      }
+	  
+	  response.json().then(function(data) {
+		var s3 = data[1].title + data[2].title
+        console.log('FETCH WYNIK STRING: ' + s3);
+      });
+    }
+  )
+   .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  })
+ 
+ 
+ .finally(() => console.log("Fetch string ZROBIONY!"));
+ 
+ 
+//ZAD.6
+//task 1
+axios.get('https://jsonplaceholder.typicode.com/todos')
+  .then((response) => {
+    console.log("AXIOS DODAWANIE: " + (response.data[0].userId + response.data[0].id));
+  })
+  .catch(function (error) {
+    console.log("AXIOS błąd: ", error);
+  })
+.finally(() => console.log('AXIOS liczby - ZROBIONE'));
+
+//task 2
+axios.get('https://jsonplaceholder.typicode.com/todos')
+  .then((response) => {
+    let s1 = response.data[0].title;
+    let s2 = response.data[1].title;
+	var s3 = `${s1}${s2}`
+    console.log("AXIOS ŁĄCZENIE STRINGÓW: " + s3); 
+  })
+  .catch(function (error) {
+    console.log("AXIOS błąd: ", error);
+  })
+.finally(() => console.log('AXIOS string - ZROBIONE'));
+
+
+ 
+ 
+})();
+</script>
+	
+	
+</body>
+
+</html>
+
