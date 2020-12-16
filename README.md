@@ -1,6 +1,15 @@
 # projektowanie-serwisow-www-dane-185ic
 # Autor: Michał Kohnke
 
+					Laboratorium nr 7 - pierwsza podstrona 
+![alt text](https://github.com/MichalKohnke/projektowanie-serwisow-www-dane-185ic/blob/main/Lab7/lab7_screeny/home.png)
+
+					Laboratorium nr 7 - druga podstrona
+![alt text](https://github.com/MichalKohnke/projektowanie-serwisow-www-dane-185ic/blob/main/Lab7/lab7_screeny/about.png)
+
+					Laboratorium nr 7 - trzecia podstrona
+![alt text](https://github.com/MichalKohnke/projektowanie-serwisow-www-dane-185ic/blob/main/Lab7/lab7_screeny/users.png)
+
 					Laboratorium nr 6 - index 
 ![alt text](https://github.com/MichalKohnke/projektowanie-serwisow-www-dane-185ic/blob/main/Lab6/lab6_screeny/index.png)
 
