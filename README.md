@@ -4,6 +4,8 @@
 					Laboratorium nr 8 - git diff 
 ![alt text](https://github.com/MichalKohnke/projektowanie-serwisow-www-dane-185ic/blob/main/lab_8/lab8_screeny/git_diff_calosc.jpg)
 
+Aplikacja użyta jako podstawa - https://github.com/andrwsalcdo/react-bmi ; Dodane komentarze w plikach oraz zmienione wartości na język polski. Mała modyfikacja w pliku .css(zmiana koloru suwaków) oraz dodany kolejny komponent zajmujący się obliczaniem wagi idealnej dla podanego wzrostu i jego zaimplementowanie na stronie. 
+
 					Laboratorium nr 7 - pierwsza podstrona 
 ![alt text](https://github.com/MichalKohnke/projektowanie-serwisow-www-dane-185ic/blob/main/Lab7/lab7_screeny/home.png)
 
