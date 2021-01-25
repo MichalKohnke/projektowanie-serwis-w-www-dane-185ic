@@ -2,7 +2,7 @@
 # Autor: Michał Kohnke
 
 					Laboratorium nr 8 - git diff 
-![alt text](https://github.com/MichalKohnke/projektowanie-serwisow-www-dane-185ic/blob/main/Lab_8/lab8_screeny/git_diif_calosc.png)
+![alt text](https://github.com/MichalKohnke/projektowanie-serwisow-www-dane-185ic/blob/main/lab_8/lab8_screeny/git_diif_calosc.png)
 
 					Laboratorium nr 7 - pierwsza podstrona 
 ![alt text](https://github.com/MichalKohnke/projektowanie-serwisow-www-dane-185ic/blob/main/Lab7/lab7_screeny/home.png)
